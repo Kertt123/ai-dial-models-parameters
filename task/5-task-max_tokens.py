@@ -1,4 +1,4 @@
-from task.app.main import run
+from app.main import run
 
 # TODO:
 #  Try `max_tokens` parameter. It sets the maximum length of the AI's response. The AI will stop generating text once it hits this limit.
@@ -6,6 +6,7 @@ from task.app.main import run
 
 run(
     deployment_name='gpt-4o',
+    max_tokens=10,
     # TODO:
     #  Use `max_tokens` parameter with value 10
 )
